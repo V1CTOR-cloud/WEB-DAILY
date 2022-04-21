@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Por alguna razón no quiere coger cosas en el root */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--fondo);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--themeColor);
+    border-radius: 5px;
+}
+
+:root {
+    --themeColor: #4263ec
+}
+
+:root {
+    --tint: #2b49c3
+}
+
+:root {
+    --greyish: #babad6
+}
+
+:root {
+    --fondo: #f4f6fc
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    font-weight: 800;
+    cursor: none;
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 20px solid dodgerblue;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-2%, -2%);
+    z-index: 2;
+    transition: transform .2s;
+}
+
+header {
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    background: var(--fondo);
+}
+
+.logo {
+    height: 20vh;
+    z-index: 3;
+    position: absolute;
+}
+
+.esp {
+    height: 100%;
+    width: 70%;
+}
+
+nav {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+nav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.magnetic-wrap {
+    display: inline-block;
+    position: relative;
+}
+
+.magnetic-size {
+    position: absolute;
+    height: 30vh;
+    width: 10rem;
+    bottom: -3rem;
+    left: -3rem;
+    right: -3rem;
+    z-index: 1;
+}
+
+.size1 {
+    margin: 3rem;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: var(--fondo);
+}
+
+.blob-top {
+    position: absolute;
+    height: 150%;
+    left: -30%;
+    top: -60%;
+    transform: rotate(180deg);
+}
+
+.blob2 {
+    position: absolute;
+    height: 120%;
+    left: -15%;
+    top: 15%;
+    transform: rotate(180deg);
+}
+
+.content {
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
+
+.content h1 {
+    font-size: 4rem;
+}
+
+.titulo {
+    color: var(--themeColor);
+    position: relative;
+    transition: transform .2s;
+}
+
+.cont2 {
+    height: 100vh;
+    background: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-titulo {
+    position: absolute;
+    bottom: -32%;
+}
+
+.box-titulo h1 {
+    font-size: 3.8rem;
+}
+
+.gif-blob1 {
+    height: 30vh;
+    position: relative;
+    left: 5%;
+    top: -8%;
+}
+
+.gif-blob2 {
+    height: 60vh;
+    position: relative;
+    left: 5%;
+    top: 10%;
+    opacity: 0.5;
+}
+
+.content2 {
+    height: 25%;
+    width: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.head p {
+    font-weight: 100;
+}
+
+.foo {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.foo p {
+    font-weight: 100;
+}
+
+.cont-pers {
+    height: 100vh;
+    width: 100%;
+    background: lightcoral;
+    z-index: 1;
+    position: relative;
+}
+
+.box-pers-titulo {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.description {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description h4 {
+    font-size: 2rem;
+    font-family: "Open Sans";
+    font-weight: 300;
+}
+
+.custom {
+    height: 60vh;
+    width: 45%;
+    background: red;
+    /*background: url("/Assets/yo.jpg") no-repeat center center;*/
+    border-bottom-left-radius: 180%;
+    border-bottom-right-radius: 90%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 280%;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    background-size: 100% 100%;
+}
